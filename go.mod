@@ -1,4 +1,4 @@
-module github.com/ory/go-acc
+module github.com/danedmunds/go-acc
 
 require (
 	github.com/dgraph-io/ristretto v0.0.2 // indirect
