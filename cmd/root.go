@@ -89,7 +89,7 @@ GO_TEST_BINARY="gotest"
 				c.Stdout = &buf
 				c.Stderr = &buf
 				if err := c.Run(); err != nil {
-					check(fmt.Errorf("unable to run go list: %w", err))
+					check(fmt.Errorf("unable to run go list: %w\noutput: %s", err, buf.String()))
 				}
 
 				var add []string
